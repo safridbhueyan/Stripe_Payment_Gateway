@@ -7,6 +7,8 @@ import 'package:stripe_payment/const.dart';
 class StripeServices {
   StripeServices._();
   static final StripeServices instance = StripeServices._();
+  
+  get stripeSecretekey => null;
 
   // Main entry point to make a payment
   Future<void> makePayment() async {
